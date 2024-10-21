@@ -1,0 +1,22 @@
+GET http://localhost:3000/api/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNmZDljNDg4LThjODQtNDQyOS04ZmVkLTZkMTNlNDM0YzYwZiIsImVtYWlsIjoidGVzdEBma3RlY2guYXIiLCJpYXQiOjE3MjgzMjU5MDZ9.ASPqZMJwJ_YHTdxFZbBkj3E3rvWEG2SGdAo29jeQFlo
+###
+
+POST http://localhost:3000/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "test@fktech.ar",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "user-test",
+  "email": "test@fktech.ar",
+  "password": "123456"
+}
